@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Examen Módulo 1 (Parte HTML y CSS) - Daniel González González</title>
+</head>
+
+<body>
+  <form>
+    <h1>Formulario de contacto</h1>
+    <fieldset class="hablemos-fieldset">
+      <legend class="fieldset-legend">Hablemos...</legend>
+      <div class="field container-nombre">
+        <label>Nombre
+          <input required type="text" name="nombre" placeholder="Su nombre">
+          <span>Campo obligatorio</span>
+        </label>
+      </div>
+      <div class="field container-direccion">
+        <label>Dirección
+          <input type="text" name="direccion" placeholder="Su dirección">
+        </label>
+      </div>
+      <div class="field container-direccion">
+        <label>Correo electrónico
+          <input required type="email" name="email" placeholder="Su Email">
+          <span>Campo obligatorio</span>
+        </label>
+      </div>
+      <div class="field container-asunto">
+        <label>Asunto:
+          <input required type="text" name="asunto" placeholder="Motivo de contacto">
+          <span>Campo obligatorio</span>
+        </label>
+      </div>
+      <div class="field container-direccion">
+        <label>Mensaje:
+          <textarea required type="text" name="mensaje" placeholder="Su mensaje" rows="4" cols="50"></textarea>
+          <span>Campo obligatorio</span>
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="otros-datos-fieldset">
+      <legend class="fieldset-legend">Otros datos</legend>
+      <div class="field container-personal-data">
+        <label><strong>¿Cómo contactó con nosotros?</strong></label>
+        <label>
+          <input type="checkbox" name="web" value="web">Web
+        </label>
+        <label>
+          <input type="checkbox" name="amigos" value="amigos">Amigos
+        </label>
+        <label>
+          <input type="checkbox" name="prensa" value="prensa">Prensa
+        </label>
+        <label>
+          <input type="checkbox" name="otros" value="otros">Otros
+        </label>
+      </div>
+      <div class="field container-esp">
+        <label><strong>¿Es usted español?</strong></label>
+        <label>
+          Sí <input type="radio" name="esp" value="si">
+        </label>
+        <label>
+          No <input type="radio" name="esp" value="no">
+        </label>
+      </div>
+      <div class="field container-intereses">
+        <label><strong>Sus intereses</strong></label>
+        <select multiple id="intereses" name="intereses">
+          <option value="deportes">Deportes</option>
+          <option value="naturaleza">Naturaleza</option>
+          <option value="informatica">Informática</option>
+          <option value="cine">Cine</option>
+        </select>
+      </div>
+    </fieldset>
+    <div class="container-btn"><button type="submit">Enviar</button></div>
+  </form>
+</body>
+</html>

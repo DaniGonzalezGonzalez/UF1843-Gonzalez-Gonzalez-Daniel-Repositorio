@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+  h1:first-letter {
+    font-size: 1.3em;
+  }
+
+
+fieldset {
+  border: none;
+}
+
+  fieldset span {
+    color: red;
+  }
+
+  .fieldset-legend {
+    text-decoration: underline;
+    font-size: 1.3em;
+  }
+
+  .hablemos-fieldset input,
+  .hablemos-fieldset textarea {
+    display: block;
+    width: 100%;
+  }
+
+  .otros-datos-fieldset strong {
+    display: block;
+  }
+
+  .container-intereses option {
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+button {
+  border: none;
+  padding: .5rem .7rem;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  background-color: darkgrey;
+  color: white;
+}  
+  .container-btn {
+    display: flex;
+    justify-content: end;
+ }
+ 
+
+::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+}
